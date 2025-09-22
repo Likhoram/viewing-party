@@ -8,6 +8,8 @@ Talk through each section with your partner. Add notes on what you discussed and
 ## Collaboration vs. Individual Work Expectations
 *Clarify your collaboration expectations - does your group want to write code together all of the time? Or divide work to do independently, then come together to share accomplishments? What tools and technologies can help your collaboration?*
 
+We would love to start off individually to understand the prompt and project in our own ways. To begin writing pesudocode independently and then coming together to discuss how we approach this method of problem solving before coding together to produce the final code. 
+
 ## Learning Style
 *How does each team member learn best in project settings?*
 
