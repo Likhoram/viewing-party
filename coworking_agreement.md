@@ -18,12 +18,17 @@ We would love to start off individually to understand the prompt and project in 
 ## Preferred Feedback Style
 *How does each team member best receive feedback?*
 
+Positive direct approach.
+
 ## One Team Communication Skill to Improve
 *What is a teamwork-related skill you want to work on?*
 
 ## Optional: Other agreements
 *Other co-working agreements that were not captured in the above sections.*
 
+None
+
 ## Signatures
-______________ _______________
+______________ __May_Lee__
 Date: _________
+
