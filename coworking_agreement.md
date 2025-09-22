@@ -14,6 +14,7 @@ We would love to start off individually to understand the prompt and project in 
 
 ## Learning Style
 *How does each team member learn best in project settings?*
+Teamwork, problem solving together, asking questions, being patient. 
 
 ## Preferred Feedback Style
 *How does each team member best receive feedback?*
@@ -22,6 +23,7 @@ Positive direct approach.
 
 ## One Team Communication Skill to Improve
 *What is a teamwork-related skill you want to work on?*
+Communication. Time management. Resolving conflicts. Not being competitive. 
 
 ## Optional: Other agreements
 *Other co-working agreements that were not captured in the above sections.*
@@ -29,6 +31,6 @@ Positive direct approach.
 None
 
 ## Signatures
-______________ __May_Lee__
-Date: _________
 
+_Wenxin Li___ ___May_Lee___
+Date: _9/22/2025________
