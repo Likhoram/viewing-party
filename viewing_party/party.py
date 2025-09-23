@@ -64,7 +64,43 @@ def watch_movie(user_data, title):
 # -----------------------------------------
 # ------------- WAVE 3 --------------------
 # -----------------------------------------
+# movie =  {
+#         "title": "Title A",
+#         "genre": "Horror",
+#         "rating": 3.5
+#       }
+def get_unique_watched(user_data):
+# user_data = {"watched": [{}], "friends": [{"watched":[{}]}]}
+# return movie user has watched but friends haven't as a list of dictionaries
+# compare {} in "watched" and "friends":"watched", return the unique one in "watched".
 
+# make a list of friends wathced movie titles.
+    friends_movies = []
+    for movie_dict in user_data["friends"]:
+        for movie in movie_dict["watched"]:
+            friends_movies.append(movie["title"])
+
+# loop throught user watched list, return ones different than friends watched list.
+    user_unique = []
+    for movie in user_data["watched"]:
+        if movie["title"] not in friends_movies:
+            user_unique.append(movie)
+
+    return user_unique       
+
+def get_friends_unique_watched(user_data):
+# return movie at least one of the friends have watched, but user hasn't as a list of dict
+    user_movies = []
+    for movie in user_data["watched"]:
+        user_movies.append(movie["title"])
+
+    friends_unique = []
+    for movie_dict in user_data["friends"]:
+        for movie in movie_dict["watched"]:
+            if movie["title"] not in user_movies:
+                friends_unique.append(movie)
+
+    return friends_unique
         
 # -----------------------------------------
 # ------------- WAVE 4 --------------------
@@ -73,4 +109,5 @@ def watch_movie(user_data, title):
 # -----------------------------------------
 # ------------- WAVE 5 --------------------
 # -----------------------------------------
-
+def get_new_rec_by_genre(user_data):
+    
