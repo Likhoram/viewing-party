@@ -60,6 +60,42 @@ def watch_movie(user_data, title):
 # ------------- WAVE 2 --------------------
 # -----------------------------------------
 
+def get_watched_avg_rating(user_data):
+
+    average_rating = 0.0
+
+    if not user_data:
+        return average_rating
+    
+    for movie in user_data:
+        rating += user_data["rating"]
+    
+    average_rating = rating / len(user_data)
+    return average_rating
+
+def get_most_watched_genre(user_data):
+    
+    if not user_data:
+        return None
+    
+    genre_dict = {}
+
+    for movie in user_data:
+        for genre in movie["genre"]:
+            if genre in genre_dict:
+                genre_dict[genre] += 1
+            else:
+                genre_dict[genre_dict] = 1
+        
+    most_frequent_movie = None
+    highest_counter = 0
+
+    for i in range(genre_dict):
+        if genre_dict["genre"] > highest_counter:
+            most_frequent_movie = genre_dict.keys[i]
+
+    return most_frequent_movie
+
 
 # -----------------------------------------
 # ------------- WAVE 3 --------------------
