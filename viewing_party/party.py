@@ -147,3 +147,7 @@ def get_friends_unique_watched(user_data):
 # -----------------------------------------
 def get_new_rec_by_genre(user_data):
     pass
+#rec_genre = [], not in "watched", in at least one friends "watched", "genre" is user most frequent
+
+#find genre
+
