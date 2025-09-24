@@ -106,6 +106,33 @@ def get_most_watched_genre(user_data):
 # ------------- WAVE 4 --------------------
 # -----------------------------------------
 
+def get_available_recs(user_data):
+    
+    recommendations = []
+
+    if not user_data:
+        return recommendations
+    
+    user_movies = []
+    for u_movies in user_data["watched"]:
+        user_movies.append(u_movies["title"])
+
+    for friend in user_data["friends"]:
+        for movie in friend["watched"]:
+            if (movie["title"] not in user_movies and
+                movie["host"] in user_data["subscriptions"] and
+                movie not in recommendations):
+                recommendations.append(movie)
+
+    return recommendations
+
+
+#make a list of recommended movies
+    #add only if:
+    #not in user_data watchlist
+    #in friends dictionary
+    #in user's subsciptions
+
 # -----------------------------------------
 # ------------- WAVE 5 --------------------
 # -----------------------------------------
