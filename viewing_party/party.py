@@ -77,7 +77,7 @@ def get_watched_avg_rating(user_data):
 
 def get_most_watched_genre(user_data):
     
-    if not user_data:
+    if user_data["watched"] == []:
         return None
     
     genre_dict = {}
@@ -89,15 +89,14 @@ def get_most_watched_genre(user_data):
         else:
             genre_dict[genre] = 1
         
-    most_frequent_movie = None
     highest_counter = 0
 
     for genre in genre_dict:
         if genre_dict[genre] > highest_counter:
             highest_counter = genre_dict[genre]
-            most_frequent_movie = genre
+            most_frequent_genre = genre
 
-    return most_frequent_movie
+    return most_frequent_genre
 
 
 # -----------------------------------------
