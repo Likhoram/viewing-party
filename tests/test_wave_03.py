@@ -54,8 +54,8 @@ def test_friends_unique_movies_not_duplicated():
 
     # Assert
     assert len(friends_unique_movies) == 3
-    assert friends_unique_movies = [INTRIGUE_3]
-
+    assert INTRIGUE_3 in friends_unique_movies
+    
 
 # @pytest.mark.skip()
 def test_friends_not_unique_movies():

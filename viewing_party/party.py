@@ -110,11 +110,11 @@ def get_unique_watched(user_data):
 # return movie user has watched but friends haven't as a list of dictionaries
 # compare {} in "watched" and "friends":"watched", return the unique one in "watched".
 
-# make a list of friends wathced movie titles.
-    friends_movies = []
+# make a list of friends wathced movie titles. Set makes it more efficient.
+    friends_movies = set()
     for movie_dict in user_data["friends"]:
         for movie in movie_dict["watched"]:
-            friends_movies.append(movie["title"])
+            friends_movies.add(movie["title"])
 
 # loop throught user watched list, return ones different than friends watched list.
     user_unique = []
@@ -126,14 +126,14 @@ def get_unique_watched(user_data):
 
 def get_friends_unique_watched(user_data):
 # return movie at least one of the friends have watched, but user hasn't as a list of dict
-    user_movies = []
+    user_movies = set()
     for movie in user_data["watched"]:
-        user_movies.append(movie["title"])
+        user_movies.add(movie["title"])
 
     friends_unique = []
     for movie_dict in user_data["friends"]:
         for movie in movie_dict["watched"]:
-            if movie["title"] not in user_movies:
+            if movie["title"] not in user_movies and movie not in friends_unique:
                 friends_unique.append(movie)
 
     return friends_unique
@@ -146,4 +146,4 @@ def get_friends_unique_watched(user_data):
 # ------------- WAVE 5 --------------------
 # -----------------------------------------
 def get_new_rec_by_genre(user_data):
-    
+    pass
