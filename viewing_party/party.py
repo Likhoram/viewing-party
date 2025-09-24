@@ -102,11 +102,6 @@ def get_most_watched_genre(user_data):
 # -----------------------------------------
 # ------------- WAVE 3 --------------------
 # -----------------------------------------
-# movie =  {
-#         "title": "Title A",
-#         "genre": "Horror",
-#         "rating": 3.5
-#       }
 def get_unique_watched(user_data):
 # user_data = {"watched": [{}], "friends": [{"watched":[{}]}]}
 # return movie user has watched but friends haven't as a list of dictionaries
